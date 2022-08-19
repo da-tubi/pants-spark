@@ -7,8 +7,13 @@ backend_packages = [
   "pants.backend.experimental.scala",
 ]
 
+[jvm.resolves]
+cat_req = "3rdparty/jvm/cat.lock"
+dog_req = "3rdparty/jvm/dog.lock"
+
 [scala.version_for_resolve]
-jvm-default = "2.13.8"
+cat_req = "2.12.15"
+dog_req = "2.12.15"
 
 [source]
 root_patterns = [

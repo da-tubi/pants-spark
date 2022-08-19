@@ -1,1 +1,4 @@
-scala_sources(name="sources")
+scala_sources(
+  name="sources",
+  resolve="cat_req"
+)

@@ -2,6 +2,10 @@ jvm_artifact(
     name="scala-library",
     group="org.scala-lang",
     artifact="scala-library",
-    version="2.13.8",
+    version="2.12.15",
     packages=["scala.**"],
+    resolve=parametrize(
+        "cat_req",
+        "dog_req",
+    ),
 )

@@ -3,8 +3,9 @@ deploy_jar(
     main="tubi.cat.Tail",
     dependencies=[
         "src/jvm/tubi/cat:sources",
-        "src/jvm/tubi/common:sources",
+        "src/jvm/tubi/common:sources@resolve=cat_req",
     ],
+    resolve="cat_req"
 )
 
 deploy_jar(
@@ -12,6 +13,7 @@ deploy_jar(
     main="tubi.dog.Tail",
     dependencies=[
         "src/jvm/tubi/dog:sources",
-        "src/jvm/tubi/common:sources",
+        "src/jvm/tubi/common:sources@resolve=dog_req",
     ],
+    resolve="dog_req"
 )
