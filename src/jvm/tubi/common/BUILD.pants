@@ -1,0 +1,3 @@
+scala_sources(
+    name=f"sources"
+)

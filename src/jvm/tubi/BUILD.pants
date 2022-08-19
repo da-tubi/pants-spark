@@ -1,0 +1,17 @@
+deploy_jar(
+    name="cat",
+    main="tubi.cat.Tail",
+    dependencies=[
+        "src/jvm/tubi/cat:sources",
+        "src/jvm/tubi/common:sources",
+    ],
+)
+
+deploy_jar(
+    name="dog",
+    main="tubi.dog.Tail",
+    dependencies=[
+        "src/jvm/tubi/dog:sources",
+        "src/jvm/tubi/common:sources",
+    ],
+)

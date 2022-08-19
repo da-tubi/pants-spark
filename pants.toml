@@ -9,3 +9,9 @@ backend_packages = [
 
 [scala.version_for_resolve]
 jvm-default = "2.13.8"
+
+[source]
+root_patterns = [
+  "/src/*",
+  "/tests/*",
+]
