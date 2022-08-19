@@ -1,0 +1,11 @@
+[GLOBAL]
+pants_version = "2.12.0"
+
+backend_packages = [
+  # Each backend can be used independently, so there is no need to enable Scala if you
+  # have a pure-Java repository (or vice versa).
+  "pants.backend.experimental.scala",
+]
+
+[scala.version_for_resolve]
+jvm-default = "2.13.8"

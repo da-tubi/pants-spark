@@ -1,0 +1,9 @@
+scala_sources(name = "app")
+
+deploy_jar(
+    name="bin",
+    main="Main",
+    dependencies=[
+        ":app",
+    ],
+)
