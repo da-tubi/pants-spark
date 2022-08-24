@@ -1,0 +1,8 @@
+# A "group" named `default`.
+# Multiple groups are supported: consider creating a group per project or team.
+[groups.default]
+addresses = [
+  "src/jvm::",
+]
+
+resolve = "jvm:cat_req"

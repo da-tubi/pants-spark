@@ -20,3 +20,6 @@ root_patterns = [
   "/src/*",
   "/tests/*",
 ]
+
+[experimental-bsp]
+groups_config_files = ["bsp-groups.toml"]
