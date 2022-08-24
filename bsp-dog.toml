@@ -1,0 +1,7 @@
+[groups.dog]
+addresses = [
+    "src/jvm/tubi/common:sources",
+    "src/jvm/tubi/dog:sources"
+]
+
+resolve = "jvm:dog_req"

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -rf .idea/
+rm -rf .bsp/
+rm -rf bsp-default.toml
+
+ln -s bsp-$1.toml bsp-default.toml
+./pants experimental-bsp

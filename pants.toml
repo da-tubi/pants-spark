@@ -22,4 +22,6 @@ root_patterns = [
 ]
 
 [experimental-bsp]
-groups_config_files = ["bsp-groups.toml"]
+groups_config_files = [
+  "bsp-default.toml",
+]

@@ -1,0 +1,7 @@
+[groups.cat]
+addresses = [
+    "src/jvm/tubi/common:sources",
+    "src/jvm/tubi/cat:sources"
+]
+
+resolve = "jvm:cat_req"
