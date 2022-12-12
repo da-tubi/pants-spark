@@ -11,9 +11,13 @@ deploy_jar(
 deploy_jar(
     name="dog",
     main="tubi.dog.Tail",
+    output_path="dog.jar",
     dependencies=[
         "src/jvm/tubi/dog:sources",
         "src/jvm/tubi/common:sources@resolve=dog_req",
+    ],
+    shading_rules=[
+       shading_zap(pattern="org.apache.spark.**"),
     ],
     resolve="dog_req"
 )
