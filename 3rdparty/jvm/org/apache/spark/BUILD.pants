@@ -1,16 +1,16 @@
-jvm_artifact(
+scala_artifact(
     name="spark_sql_312",
     group="org.apache.spark",
-    artifact="spark-sql_2.12",
+    artifact="spark-sql",
     version="3.1.2",
     packages=["org.apache.spark.**"],
     resolve="dog_req",
 )
 
-jvm_artifact(
+scala_artifact(
     name="spark_sql_321",
     group="org.apache.spark",
-    artifact="spark-sql_2.12",
+    artifact="spark-sql",
     version="3.2.1",
     packages=["org.apache.spark.**"],
     resolve="cat_req",
