@@ -13,10 +13,10 @@ src/jvm/tubi:dog
 
 Shortcut:
 ```commandline
-$ bin/run cat
+$ bin/run src/jvm/tubi:cat
 ```
 
 Complete version:
 ```commandline
-$ ./pants run src/jvm/tubi:dog
+$ pants run src/jvm/tubi:dog
 ```

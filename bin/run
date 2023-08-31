@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env elvish
 
-TUBI_TARGET_NAME=$1
+echo (count $args)
 
-if [[ -z "$TUBI_TARGET_NAME" ]]; then
-    ./pants filter --target-type=deploy_jar ::
-else
-    ./pants filter --target-type=deploy_jar --address-regex=".*:${TUBI_TARGET_NAME}$" :: | wc -l | grep "^1$" && \
-    ./pants filter --target-type=deploy_jar --address-regex=".*:${TUBI_TARGET_NAME}$" :: | xargs -I% ./pants run %
-fi
+if (== (count $args) 0) {
+  pants filter --target-type=deploy_jar ::
+} else {
+  var target = $args[0]
+  pants run $target
+}
