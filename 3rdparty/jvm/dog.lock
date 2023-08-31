@@ -6,7 +6,7 @@
 # {
 #   "version": 1,
 #   "generated_with_requirements": [
-#     "org.apache.spark:spark-sql_2.12:3.1.2,url=not_provided,jar=not_provided",
+#     "org.apache.spark:spark-sql_2.12:3.1.2,url=not_provided,jar=not_provided,excludes=org.json4s:json4s-jackson_2.12",
 #     "org.scala-lang:scala-library:2.12.15,url=not_provided,jar=not_provided"
 #   ]
 # }
@@ -1075,52 +1075,6 @@ artifact = "jcip-annotations"
 version = "1.0-1"
 packaging = "jar"
 
-[[entries.dependencies]]
-group = "com.github.stephenc.jcip"
-artifact = "jcip-annotations"
-version = "1.0-1"
-packaging = "jar"
-
-
-[entries.coord]
-group = "com.nimbusds"
-artifact = "nimbus-jose-jwt"
-version = "4.41.1"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "fbfd0d5f2b2f86758b821daa5e79b5d7c965edd9dc1b2cc80b515df1c6ddc22d"
-serialized_bytes_length = 299508
-[[entries]]
-file_name = "com.nimbusds_nimbus-jose-jwt_4.41.1.jar"
-[[entries.directDependencies]]
-group = "com.github.stephenc.jcip"
-artifact = "jcip-annotations"
-version = "1.0-1"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.github.stephenc.jcip"
-artifact = "jcip-annotations"
-version = "1.0-1"
-packaging = "jar"
-
-
-[entries.coord]
-group = "com.nimbusds"
-artifact = "nimbus-jose-jwt"
-version = "4.41.1"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "fbfd0d5f2b2f86758b821daa5e79b5d7c965edd9dc1b2cc80b515df1c6ddc22d"
-serialized_bytes_length = 299508
-[[entries]]
-file_name = "com.nimbusds_nimbus-jose-jwt_4.41.1.jar"
-[[entries.directDependencies]]
-group = "com.github.stephenc.jcip"
-artifact = "jcip-annotations"
-version = "1.0-1"
-packaging = "jar"
-
 [[entries.directDependencies]]
 group = "net.minidev"
 artifact = "json-smart"
@@ -1156,6 +1110,29 @@ artifact = "jcip-annotations"
 version = "1.0-1"
 packaging = "jar"
 
+[[entries.dependencies]]
+group = "com.github.stephenc.jcip"
+artifact = "jcip-annotations"
+version = "1.0-1"
+packaging = "jar"
+
+
+[entries.coord]
+group = "com.nimbusds"
+artifact = "nimbus-jose-jwt"
+version = "4.41.1"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "fbfd0d5f2b2f86758b821daa5e79b5d7c965edd9dc1b2cc80b515df1c6ddc22d"
+serialized_bytes_length = 299508
+[[entries]]
+file_name = "com.nimbusds_nimbus-jose-jwt_4.41.1.jar"
+[[entries.directDependencies]]
+group = "com.github.stephenc.jcip"
+artifact = "jcip-annotations"
+version = "1.0-1"
+packaging = "jar"
+
 [[entries.directDependencies]]
 group = "net.minidev"
 artifact = "json-smart"
@@ -1172,6 +1149,29 @@ packaging = "jar"
 group = "net.minidev"
 artifact = "json-smart"
 version = "2.3"
+packaging = "jar"
+
+
+[entries.coord]
+group = "com.nimbusds"
+artifact = "nimbus-jose-jwt"
+version = "4.41.1"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "fbfd0d5f2b2f86758b821daa5e79b5d7c965edd9dc1b2cc80b515df1c6ddc22d"
+serialized_bytes_length = 299508
+[[entries]]
+file_name = "com.nimbusds_nimbus-jose-jwt_4.41.1.jar"
+[[entries.directDependencies]]
+group = "com.github.stephenc.jcip"
+artifact = "jcip-annotations"
+version = "1.0-1"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "com.github.stephenc.jcip"
+artifact = "jcip-annotations"
+version = "1.0-1"
 packaging = "jar"
 
 
@@ -2936,12 +2936,6 @@ version = "16.0.1"
 packaging = "jar"
 
 [[entries.directDependencies]]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
-packaging = "jar"
-
-[[entries.directDependencies]]
 group = "org.slf4j"
 artifact = "slf4j-api"
 version = "1.7.30"
@@ -2951,12 +2945,6 @@ packaging = "jar"
 group = "com.google.guava"
 artifact = "guava"
 version = "16.0.1"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -3030,6 +3018,12 @@ version = "16.0.1"
 packaging = "jar"
 
 [[entries.directDependencies]]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
+packaging = "jar"
+
+[[entries.directDependencies]]
 group = "org.slf4j"
 artifact = "slf4j-api"
 version = "1.7.30"
@@ -3039,6 +3033,12 @@ packaging = "jar"
 group = "com.google.guava"
 artifact = "guava"
 version = "16.0.1"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -3238,12 +3238,6 @@ packaging = "jar"
 group = "org.apache.curator"
 artifact = "curator-framework"
 version = "2.13.0"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -3285,6 +3279,12 @@ packaging = "jar"
 group = "org.apache.curator"
 artifact = "curator-framework"
 version = "2.13.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -3376,12 +3376,6 @@ packaging = "jar"
 group = "org.apache.kerby"
 artifact = "kerb-simplekdc"
 version = "1.0.1"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
 packaging = "jar"
 
 [[entries.directDependencies]]
@@ -3550,12 +3544,6 @@ packaging = "jar"
 group = "org.apache.kerby"
 artifact = "token-provider"
 version = "1.0.1"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -3869,6 +3857,12 @@ version = "1.0.1"
 packaging = "jar"
 
 [[entries.directDependencies]]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
+packaging = "jar"
+
+[[entries.directDependencies]]
 group = "org.slf4j"
 artifact = "slf4j-api"
 version = "1.7.30"
@@ -4034,6 +4028,12 @@ packaging = "jar"
 group = "org.apache.kerby"
 artifact = "token-provider"
 version = "1.0.1"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -6886,6 +6886,19 @@ packaging = "jar"
 fingerprint = "afec7d17fdd5200d13498a42c57010db8abf4be78a8a32613a402d219c5ec663"
 serialized_bytes_length = 317928
 [[entries]]
+directDependencies = []
+dependencies = []
+file_name = "org.apache.hadoop_hadoop-yarn-client_3.2.0.jar"
+
+[entries.coord]
+group = "org.apache.hadoop"
+artifact = "hadoop-yarn-client"
+version = "3.2.0"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "afec7d17fdd5200d13498a42c57010db8abf4be78a8a32613a402d219c5ec663"
+serialized_bytes_length = 317928
+[[entries]]
 file_name = "org.apache.hadoop_hadoop-yarn-client_3.2.0.jar"
 [[entries.directDependencies]]
 group = "com.google.guava"
@@ -7205,19 +7218,6 @@ artifact = "slf4j-api"
 version = "1.7.30"
 packaging = "jar"
 
-
-[entries.coord]
-group = "org.apache.hadoop"
-artifact = "hadoop-yarn-client"
-version = "3.2.0"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "afec7d17fdd5200d13498a42c57010db8abf4be78a8a32613a402d219c5ec663"
-serialized_bytes_length = 317928
-[[entries]]
-directDependencies = []
-dependencies = []
-file_name = "org.apache.hadoop_hadoop-yarn-client_3.2.0.jar"
 
 [entries.coord]
 group = "org.apache.hadoop"
@@ -12235,30 +12235,6 @@ version = "3.25.0-GA"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-core_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-jackson_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
 group = "org.lz4"
 artifact = "lz4-java"
 version = "1.7.1"
@@ -12628,12 +12604,6 @@ packaging = "jar"
 group = "org.glassfish.jersey.inject"
 artifact = "jersey-hk2"
 version = "2.30"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.json4s"
-artifact = "json4s-jackson_2.12"
-version = "3.7.0-M5"
 packaging = "jar"
 
 [[entries.directDependencies]]
@@ -13469,30 +13439,6 @@ packaging = "jar"
 group = "org.javassist"
 artifact = "javassist"
 version = "3.25.0-GA"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-core_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-jackson_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -15051,30 +14997,6 @@ version = "3.25.0-GA"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-core_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-jackson_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
 group = "org.lz4"
 artifact = "lz4-java"
 version = "1.7.1"
@@ -15510,136 +15432,6 @@ version = "3.1.9"
 packaging = "jar"
 
 [[entries.directDependencies]]
-group = "log4j"
-artifact = "log4j"
-version = "1.2.17"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.apache.yetus"
-artifact = "audience-annotations"
-version = "0.5.0"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.slf4j"
-artifact = "slf4j-api"
-version = "1.7.30"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.github.spotbugs"
-artifact = "spotbugs-annotations"
-version = "3.1.9"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.google.code.findbugs"
-artifact = "jsr305"
-version = "3.0.2"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "log4j"
-artifact = "log4j"
-version = "1.2.17"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.apache.yetus"
-artifact = "audience-annotations"
-version = "0.5.0"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.slf4j"
-artifact = "slf4j-api"
-version = "1.7.30"
-packaging = "jar"
-
-
-[entries.coord]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "23ef2bf90c8ca233f68bf3c24ab69947fc7b38e8c8b9327f5c2fd9140ae7aecf"
-serialized_bytes_length = 911603
-[[entries]]
-file_name = "org.apache.zookeeper_zookeeper_3.4.14.jar"
-[[entries.directDependencies]]
-group = "com.github.spotbugs"
-artifact = "spotbugs-annotations"
-version = "3.1.9"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "log4j"
-artifact = "log4j"
-version = "1.2.17"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.apache.yetus"
-artifact = "audience-annotations"
-version = "0.5.0"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.slf4j"
-artifact = "slf4j-api"
-version = "1.7.30"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.github.spotbugs"
-artifact = "spotbugs-annotations"
-version = "3.1.9"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.google.code.findbugs"
-artifact = "jsr305"
-version = "3.0.2"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "log4j"
-artifact = "log4j"
-version = "1.2.17"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.apache.yetus"
-artifact = "audience-annotations"
-version = "0.5.0"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.slf4j"
-artifact = "slf4j-api"
-version = "1.7.30"
-packaging = "jar"
-
-
-[entries.coord]
-group = "org.apache.zookeeper"
-artifact = "zookeeper"
-version = "3.4.14"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "23ef2bf90c8ca233f68bf3c24ab69947fc7b38e8c8b9327f5c2fd9140ae7aecf"
-serialized_bytes_length = 911603
-[[entries]]
-file_name = "org.apache.zookeeper_zookeeper_3.4.14.jar"
-[[entries.directDependencies]]
-group = "com.github.spotbugs"
-artifact = "spotbugs-annotations"
-version = "3.1.9"
-packaging = "jar"
-
-[[entries.directDependencies]]
 group = "jline"
 artifact = "jline"
 version = "0.9.94"
@@ -15717,12 +15509,6 @@ version = "3.1.9"
 packaging = "jar"
 
 [[entries.directDependencies]]
-group = "jline"
-artifact = "jline"
-version = "0.9.94"
-packaging = "jar"
-
-[[entries.directDependencies]]
 group = "log4j"
 artifact = "log4j"
 version = "1.2.17"
@@ -15750,12 +15536,6 @@ packaging = "jar"
 group = "com.google.code.findbugs"
 artifact = "jsr305"
 version = "3.0.2"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "jline"
-artifact = "jline"
-version = "0.9.94"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -15892,6 +15672,148 @@ packaging = "jar"
 group = "io.netty"
 artifact = "netty"
 version = "3.10.6.Final"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "log4j"
+artifact = "log4j"
+version = "1.2.17"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apache.yetus"
+artifact = "audience-annotations"
+version = "0.5.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.slf4j"
+artifact = "slf4j-api"
+version = "1.7.30"
+packaging = "jar"
+
+
+[entries.coord]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "23ef2bf90c8ca233f68bf3c24ab69947fc7b38e8c8b9327f5c2fd9140ae7aecf"
+serialized_bytes_length = 911603
+[[entries]]
+file_name = "org.apache.zookeeper_zookeeper_3.4.14.jar"
+[[entries.directDependencies]]
+group = "com.github.spotbugs"
+artifact = "spotbugs-annotations"
+version = "3.1.9"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "jline"
+artifact = "jline"
+version = "0.9.94"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "log4j"
+artifact = "log4j"
+version = "1.2.17"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.apache.yetus"
+artifact = "audience-annotations"
+version = "0.5.0"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.slf4j"
+artifact = "slf4j-api"
+version = "1.7.30"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "com.github.spotbugs"
+artifact = "spotbugs-annotations"
+version = "3.1.9"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "com.google.code.findbugs"
+artifact = "jsr305"
+version = "3.0.2"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "jline"
+artifact = "jline"
+version = "0.9.94"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "log4j"
+artifact = "log4j"
+version = "1.2.17"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apache.yetus"
+artifact = "audience-annotations"
+version = "0.5.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.slf4j"
+artifact = "slf4j-api"
+version = "1.7.30"
+packaging = "jar"
+
+
+[entries.coord]
+group = "org.apache.zookeeper"
+artifact = "zookeeper"
+version = "3.4.14"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "23ef2bf90c8ca233f68bf3c24ab69947fc7b38e8c8b9327f5c2fd9140ae7aecf"
+serialized_bytes_length = 911603
+[[entries]]
+file_name = "org.apache.zookeeper_zookeeper_3.4.14.jar"
+[[entries.directDependencies]]
+group = "com.github.spotbugs"
+artifact = "spotbugs-annotations"
+version = "3.1.9"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "log4j"
+artifact = "log4j"
+version = "1.2.17"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.apache.yetus"
+artifact = "audience-annotations"
+version = "0.5.0"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.slf4j"
+artifact = "slf4j-api"
+version = "1.7.30"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "com.github.spotbugs"
+artifact = "spotbugs-annotations"
+version = "3.1.9"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "com.google.code.findbugs"
+artifact = "jsr305"
+version = "3.0.2"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -17148,164 +17070,6 @@ packaging = "jar"
 fingerprint = "5d49abd02997134f80041645e9668e1ff97afd69d2c2c55ae9fbd40dc073f97b"
 serialized_bytes_length = 780265
 [[entries]]
-file_name = "org.json4s_json4s-ast_2.12_3.7.0-M5.jar"
-[[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-
-[entries.coord]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "d5c55b6a45bfec5786a174d49ddc01a4ac62c3d8ed8c26d721af1c6fe797cf1e"
-serialized_bytes_length = 85865
-[[entries]]
-file_name = "org.json4s_json4s-core_2.12_3.7.0-M5.jar"
-[[entries.directDependencies]]
-group = "com.thoughtworks.paranamer"
-artifact = "paranamer"
-version = "2.8"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.thoughtworks.paranamer"
-artifact = "paranamer"
-version = "2.8"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-
-[entries.coord]
-group = "org.json4s"
-artifact = "json4s-core_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "fdc7d6d2903f0cb02ea970b4507da955ceaf04150a2bffa8241e452b19d4888f"
-serialized_bytes_length = 512151
-[[entries]]
-file_name = "org.json4s_json4s-jackson_2.12_3.7.0-M5.jar"
-[[entries.directDependencies]]
-group = "org.json4s"
-artifact = "json4s-core_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.thoughtworks.paranamer"
-artifact = "paranamer"
-version = "2.8"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-ast_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-core_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-
-[entries.coord]
-group = "org.json4s"
-artifact = "json4s-jackson_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "cf86a72ca3dc84c3f9cc52dc5ff1ee5707d785721714094c91e183171ab55c23"
-serialized_bytes_length = 35943
-[[entries]]
-file_name = "org.json4s_json4s-scalap_2.12_3.7.0-M5.jar"
-[[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.12.15"
-packaging = "jar"
-
-
-[entries.coord]
-group = "org.json4s"
-artifact = "json4s-scalap_2.12"
-version = "3.7.0-M5"
-packaging = "jar"
-[entries.file_digest]
-fingerprint = "e5ca084361f7d0f26aec4f6d1b180a59d41b8cc49f61900e9475349296c394f3"
-serialized_bytes_length = 349059
-[[entries]]
 directDependencies = []
 dependencies = []
 file_name = "org.lz4_lz4-java_1.7.1.jar"
@@ -17610,9 +17374,31 @@ packaging = "jar"
 fingerprint = "cdba07964d1bb40a0761485c6b1e8c2f8fd9eb1d19c53928ac0d7f9510105c57"
 serialized_bytes_length = 41472
 [[entries]]
-directDependencies = []
-dependencies = []
 file_name = "org.slf4j_slf4j-log4j12_1.7.30.jar"
+[[entries.directDependencies]]
+group = "log4j"
+artifact = "log4j"
+version = "1.2.17"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.slf4j"
+artifact = "slf4j-api"
+version = "1.7.30"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "log4j"
+artifact = "log4j"
+version = "1.2.17"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.slf4j"
+artifact = "slf4j-api"
+version = "1.7.30"
+packaging = "jar"
+
 
 [entries.coord]
 group = "org.slf4j"
@@ -17623,31 +17409,9 @@ packaging = "jar"
 fingerprint = "4d41e01c40caf8a6c74add2b073055d8a4ce1c30e58154177b13f12d78abbe7b"
 serialized_bytes_length = 12211
 [[entries]]
+directDependencies = []
+dependencies = []
 file_name = "org.slf4j_slf4j-log4j12_1.7.30.jar"
-[[entries.directDependencies]]
-group = "log4j"
-artifact = "log4j"
-version = "1.2.17"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.slf4j"
-artifact = "slf4j-api"
-version = "1.7.30"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "log4j"
-artifact = "log4j"
-version = "1.2.17"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.slf4j"
-artifact = "slf4j-api"
-version = "1.7.30"
-packaging = "jar"
-
 
 [entries.coord]
 group = "org.slf4j"

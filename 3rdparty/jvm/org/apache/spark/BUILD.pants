@@ -3,6 +3,9 @@ scala_artifact(
     group="org.apache.spark",
     artifact="spark-sql",
     version="3.1.2",
+    exclusions=[
+        scala_exclude(group="org.json4s", artifact="json4s-jackson")
+    ],
     packages=["org.apache.spark.**"],
     resolve="dog_req",
 )
