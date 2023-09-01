@@ -17,7 +17,7 @@ deploy_jar(
         "src/jvm/tubi/common:sources@resolve=dog_req",
     ],
     shading_rules=[
-       shading_zap(pattern="org.apache.spark.**"),
+       shading_keep(pattern="tubi.**"),
     ],
     resolve="dog_req"
 )
